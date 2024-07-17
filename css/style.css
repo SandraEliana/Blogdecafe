@@ -50,7 +50,9 @@ h3{
 h4{
     font-size: 2.8rem ;
 }
-
+.img{
+    max-width: 100%;
+}
 /* estilos utilitarios (helpers)*/
 .no-margin{
     margin: 0;
@@ -90,10 +92,36 @@ centrar-tex{
     font-weight: 700;
 }
 .navegacion__enlace{
-    display: block;
-    text-align: center;    
+  display: inline-block;
+    text-align: center;  
     font-size: 1.8rem;
     color: #fff;
+}
+/*estilos blog*/
+.entrada{
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
+
+}
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.boton{
+    display: block;
+    font-family: var(--fuenteEncabezado);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+}
+.boton--primario{
+    background-color: #000;
+
 }
 @media (min-width:768px) {
     .barra{
@@ -104,7 +132,16 @@ centrar-tex{
 
     .navegacion{
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
 
+    }
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+
+    }
+    .boton{ 
+        display: inline-block ;
     }
 }
